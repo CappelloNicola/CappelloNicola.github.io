@@ -1,28 +1,109 @@
 body{
     background-color: #0E0300;
-}
-
-/*Navbar style*/
-#navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-#navbar > li{
-    float: left;
-}
-
-#navbar > li > a{
-    display: block;
     color: white;
+}
+
+.keyword{
+    color:red;
+}
+
+/*Navbar*/
+#navbar{
+    overflow: hidden;
+    background-color: #290900;
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar > a {
+    float: left;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+
 }
 
-#navbar > li > a:hover{
-    background-color: #111;
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown > .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+#navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #FF5C5C;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #290900;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content > a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content > a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.notSelected{
+     text-decoration: none;
+}
+
+.selected{
+    text-underline-offset: 1mm;
+}
+
+/*Intro div*/
+#intro{
+    background-color: #290900
+}
+
+/*About me div*/
+#aboutMe{
+    background-color: #290900
+}
+
+#myPhotoContainer{
+    width: 50%;
+    text-align:center;
+}
+
+#myPhoto{
+    width: 50%;
+}
+
+.icon{
+    width: 50px;
+    height:auto;
+}
+
+/*My skills*/
+#mySkills{
+    background-color: #290900
 }
