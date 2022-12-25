@@ -1,16 +1,47 @@
+:root {
+    --page-background: #3c2a4d;
+    --navbar-color: #503a65;
+    --hover-links-color: #95adbe;
+    --marginTop: 100px;
+    --padding: 50px;
+}
+
 body{
-    background-color: #0E0300;
+    background-color: var(--page-background);
     color: white;
+    font-family: Helvetica, sans-serif;
+    font-size:16px;
 }
 
 .keyword{
     color:red;
 }
 
+.underlined{
+    text-decoration: underline;
+    text-underline-offset: 2mm;
+    text-decoration-color: red;
+}
+
+/*text*/
+
+h1 {
+    font-size: 5em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
 /*Navbar*/
 #navbar{
     overflow: hidden;
-    background-color: #290900;
+    background-color: /*var(--navbar-color);*/ inherit;
+}
+
+hr {
+    width:25%;
 }
 
 #navbar a{
@@ -36,19 +67,22 @@ body{
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: /*var(--navbar-color);*/ inherit;
     font-family: inherit;
     margin: 0;
 }
 
-#navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: #FF5C5C;
+@media (hover: hover) {
+    /* when hover is supported */
+    #navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--hover-links-color);
+    }
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #290900;
+  background-color: var(--navbar-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -63,10 +97,6 @@ body{
   text-align: left;
 }
 
-.dropdown-content > a:hover {
-  background-color: #ddd;
-}
-
 .show {
   display: block;
 }
@@ -77,20 +107,66 @@ body{
 
 .selected{
     text-underline-offset: 1mm;
+    text-decoration-color: red;
 }
 
 /*Intro div*/
 #intro{
-    background-color: #290900
+    background-color: /*var(--navbar-color);*/ inherit;
+    margin-top: var(--marginTop);
+    padding: var(--padding);
+}
+
+#nameAndProfession{
+    display:inline-block;
+    border-bottom: 1px solid #e0f0ea;
+}
+
+#shortDescription{
+    margin-top:100px;
 }
 
 /*About me div*/
 #aboutMe{
-    background-color: #290900
+    background-color: var(--navbar-color);
+    padding: var(--padding);
+    margin-top: var(--marginTop);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#aboutMeHeader, #myInterestsHeader{
+    text-align:center;
+}
+
+#myInterestsDiv{
+    grid-column: 1 / span 2;
+    padding:50px;
+}
+
+#InterestIconsDiv{
+    text-align:center;
+}
+
+#InterestIconsDiv > a{
+    margin: 10px;
+}
+
+#cvButton {
+    background-color: #95adbe;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 #myPhotoContainer{
-    width: 50%;
+    width: 100%;
     text-align:center;
 }
 
@@ -99,11 +175,29 @@ body{
 }
 
 .icon{
-    width: 50px;
-    height:auto;
+    width: auto;
+    height:50px;
 }
 
 /*My skills*/
 #mySkills{
-    background-color: #290900
+    background-color: /*var(--navbar-color);*/ inherit;
+    padding: var(--padding);
+    margin-top: var(--marginTop);
+}
+
+#mySkillsHeader{
+    text-align:center;
+}
+
+.skillDiv{
+    /*float:left;*/
+    width:100px;
+    text-align:center;
+    display: inline-block;
+}
+
+.skillsSet{
+    /*overflow:hidden;*/
+    text-align:center;
 }

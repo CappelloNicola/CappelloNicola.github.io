@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./scripts/dropdown.js"></script>
@@ -15,7 +16,7 @@
     <a class="notSelected" href="news.asp">Projects</a>
     <!-- Dropdown -->
     <div class="dropdown">
-        <button class="notSelected dropbtn" onclick="showMenu()">
+        <button class="notSelected dropbtn" id="dropdownButton" onclick="showMenu()">
             Interests <i class="fa fa-caret-down"></i>
         </button>
 
@@ -30,51 +31,100 @@
 </div>
 
 <div id="intro">
-    <h1>Nicola Cappello</h1>
-    <h2>Computer Science Student</h2>
-    <hr>
-    <p>
-        Welcome to my Website! <br>
-        I'm Nicola Cappello, a computer science student at <span class="keyword">Unisa</span>. <br>
-        Here you can find my projects, check my technical skills and learn something about me and what I like.
-    </p>
+    <div id="nameAndProfession">
+        <h1>Nicola Cappello</h1>
+        <p class="keyword">Computer Science Student</p>
+    </div>
+
+    <div id="shortDescription">
+        <p>
+            Welcome to my Website! <br>
+            I'm Nicola Cappello, a computer science student at <span class="keyword">Unisa</span>. <br>
+            Here you can find my projects, check my technical skills and learn something about me and what I like.
+        </p>
+    </div>
+
 </div>
 
 <div id="aboutMe">
-    <h2>About me</h2>
-
     <div id="myDescription">
-        Hi, I'm Nicola Cappello, a 21 years old computer Science student at Unisa. I enjoy every aspect of programming,
+        <h2 id="aboutMeHeader" class="underlined">About me</h2>
+        <p>Hi, I'm Nicola Cappello, a 21 years old computer Science student at Unisa. I enjoy every aspect of programming,
         though I prefer the Back-end development. I started studying computer science in high school, dreaming about become
-        a game developer. My hobbies consist in play videogames, read manga, watch anime/movies/tv series and listen to music.
+        a game developer. My hobbies consist in play videogames, read manga, watch anime/movies/tv series and listen to music.</p>
+        <a id="cvButton" href="./files/Curriculum.pdf" target="_blank">View CV</a>
     </div>
-    <a href="./files/Curriculum.pdf" target="_blank">View CV</a>
 
     <div id="myPhotoContainer">
-       <!--- <img id="myPhoto" src="./files/MyPhoto.png"> --->
+       <img id="myPhoto" src="./files/MyPhoto.png">
     </div>
 
-    <h2>My interests</h2>
-    <a href=""><img class="icon" src="./icons/videogames.png"></a>
-    <a href=""><img class="icon" src="./icons/comic.png"></a>
-    <a href=""><img class="icon" src="./icons/film.png"></a>
-    <a href=""><img class="icon" src="./icons/headphones.png"></a>
+    <div id="myInterestsDiv">
+        <h2 id="myInterestsHeader" class="underlined">My interests</h2>
+        <div id="InterestIconsDiv">
+            <a href=""><img class="icon" src="./icons/videogames.png"></a>
+            <a href=""><img class="icon" src="./icons/comic.png"></a>
+            <a href=""><img class="icon" src="./icons/film.png"></a>
+            <a href=""><img class="icon" src="./icons/headphones.png"></a>
+        </div>
+
+    </div>
 </div>
 
 <div id="mySkills">
-    <h2>My skills</h2>
-    <h3>Front-end</h3>
-    <img class="icon" src="./icons/html.png">
-    <img class="icon" src="./icons/css-3.png">
-    <img class="icon" src="./icons/java-script.png">
-    <h3>Back-end</h3>
-    <img class="icon" src="./icons/c.png">
-    <img class="icon" src="./icons/java.png">
-    <img class="icon" src="./icons/node-js.png">
-    <h3>DBMS</h3>
-    <img class="icon" src="./icons/mysql-logo.png">
-    <img class="icon" src="./icons/mongo.png">
+    <h2 id="mySkillsHeader" class="underlined">My skills</h2>
+
+    <div class="skillsSet">
+        <h3>Front-end</h3>
+        <div class="skillDiv">
+            <img class="icon" src="./icons/html.png">
+            <p>Html</p>
+        </div>
+
+        <div class="skillDiv">
+            <img class="icon" src="./icons/css-3.png">
+            <p>Css</p>
+        </div>
+
+        <div class="skillDiv">
+            <img class="icon" src="./icons/java-script.png">
+            <p>JavaScript</p>
+        </div>
+    </div>
+
+    <div class="skillsSet">
+        <h3>Back-end</h3>
+        <div class="skillDiv">
+            <img class="icon" src="./icons/c.png">
+            <p>C</p>
+        </div>
+
+        <div class="skillDiv">
+            <img class="icon" src="./icons/java.png">
+            <p>Java</p>
+        </div>
+
+        <div class="skillDiv">
+            <img class="icon" src="./icons/node-js.png">
+            <p>Node.js</p>
+        </div>
+    </div>
+
+    <div class="skillsSet">
+        <h3>DBMS</h3>
+        <div class="skillDiv">
+            <img class="icon" src="./icons/mysql-logo.png">
+            <p>MySql</p>
+        </div>
+
+        <div class="skillDiv">
+            <img class="icon" src="./icons/mongo.png">
+            <p>MongoDB</p>
+        </div>
+    </div>
 </div>
+
+
 
 </body>
 </html>
