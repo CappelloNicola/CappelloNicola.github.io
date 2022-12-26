@@ -226,3 +226,16 @@ hr {
     /*overflow:hidden;*/
     text-align:center;
 }
+
+/*Responsive styles*/
+@media screen and (max-width: 1200px) {
+#aboutMe{
+    grid-template-columns: auto;
+}
+
+#myInterestsDiv{
+    grid-column: 1 / span 1;
+    padding:50px;
+}
+
+}
