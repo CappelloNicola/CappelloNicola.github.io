@@ -3,8 +3,8 @@
 <head>
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./scripts/dropdown.js"></script>
+    <link type="text/css"  rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/curtainMenu.js"></script>
 </head>
 <body>
 
@@ -12,22 +12,36 @@
 --->
 
 <div id="navbar">
-    <a class="selected" href="default.asp">Home</a>
-    <a class="notSelected" href="news.asp">Projects</a>
-    <!-- Dropdown -->
-    <div class="dropdown">
-        <button class="notSelected dropbtn" id="dropdownButton" onclick="showMenu()">
-            Interests <i class="fa fa-caret-down"></i>
-        </button>
+    <div></div>
+    <div id="currentPageDiv"><span class="underlined">Home</span></div>
+    <div id="menuDiv"><img id="menuIcon" onClick="showMenu()" src="./icons/menuIcon.png"></div>
+</div>
 
-        <div class="dropdown-content" id="myDropdown">
-            <a href="#">Music</a>
-            <a href="#">Videogames</a>
-            <a href="#">Movies</a>
-            <a href="#">Manga</a>
-        </div>
+<div id="curtainMenu" class="noShow">
+
+    <div id="menuLinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/workInProgress.html">Projects</a></li>
+            <li>
+                <span>Interests</span>
+                <ul id="dropdown">
+                    <li><a href="./pages/workInProgress.html">Games</a></li>
+                    <li><a href="./pages/workInProgress.html">Music</a></li>
+                    <li><a href="./pages/workInProgress.html">Manga</a></li>
+                    <li><a href="./pages/workInProgress.html">Movie</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./pages/workInProgress.html">Contact</a>
+            </li>
+        </ul>
     </div>
-    <a class ="notSelected" href="contact.asp">Contact</a>
+
+    <div id="closeIconDiv">
+        <img id="closeIcon" onClick="closeMenu()" src="./icons/closeIcon.png">
+    </div>
+
 </div>
 
 <div id="intro">

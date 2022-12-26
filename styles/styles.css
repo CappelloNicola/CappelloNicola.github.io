@@ -36,8 +36,32 @@ p {
 
 /*Navbar*/
 #navbar{
-    overflow: hidden;
-    background-color: /*var(--navbar-color);*/ inherit;
+    width:100%;
+    background-color: var(--navbar-color); /*inherit*/;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+#navbar > div{
+    width:33.33%;
+}
+
+#menuDiv{
+    text-align:right;
+    padding-right: 15px;
+}
+
+#currentPageDiv{
+    text-align:center;
+}
+
+#menuIcon{
+    width:30px;
+    height:auto;
 }
 
 hr {
@@ -46,6 +70,7 @@ hr {
 
 #navbar a{
     color: white;
+
 }
 
 #navbar > a {
@@ -55,59 +80,59 @@ hr {
 
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown > .dropbtn {
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: /*var(--navbar-color);*/ inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
 @media (hover: hover) {
     /* when hover is supported */
-    #navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: var(--hover-links-color);
+    #menuIcon:hover, #closeIcon:hover{
+        cursor:pointer;
     }
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--navbar-color);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+#curtainMenu{
+    z-index:2;
+    height:100%;
+    width:50%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.9)
 }
 
-.dropdown-content > a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.show{
+    display:flex;
 }
 
-.show {
-  display: block;
+.noShow{
+    display:none;
 }
 
-.notSelected{
-     text-decoration: none;
+#curtainMenu > div{
+    width:50%;
 }
 
-.selected{
-    text-underline-offset: 1mm;
-    text-decoration-color: red;
+#closeIconDiv{
+    text-align:right;
+    padding-right:20px;
+    padding-top:20px;
+}
+
+
+#curtainMenu ul{
+     list-style-type: none;
+}
+
+#curtainMenu li{
+     margin-top:20px;
+}
+
+#curtainMenu a{
+    text-decoration:none;
+    color: white;
+    display:block;
+}
+
+#closeIcon{
+    width:30px;
+    height:auto;
 }
 
 /*Intro div*/
