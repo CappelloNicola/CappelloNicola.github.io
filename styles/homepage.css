@@ -2,7 +2,7 @@
 
 /*Intro div*/
 #intro{
-    background-color: var(--navbar-color);
+    background-color: var(--page-background);
     margin-top: var(--marginTop);
     padding: var(--padding);
     display:grid;
@@ -42,11 +42,11 @@
 }
 
 #InterestIconsDiv{
-    text-align:center;
-}
-
-#InterestIconsDiv > a{
-    margin: 10px;
+    display:flex;
+    margin-top:50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:var(--icons-gap);
 }
 
 #cvButton {
@@ -105,6 +105,7 @@
 @media screen and (max-width: 1200px) {
     #aboutMe{
         grid-template-columns: auto;
+        gap:70px;
     }
 
     #myInterestsDiv{
