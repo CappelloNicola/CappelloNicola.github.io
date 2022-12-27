@@ -1,40 +1,3 @@
-:root {
-    --page-background: #3c2a4d;
-    --navbar-color: #503a65;
-    --hover-links-color: #95adbe;
-    --marginTop: 100px;
-    --padding: 50px;
-}
-
-body{
-    background-color: var(--page-background);
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-size:16px;
-}
-
-.keyword{
-    color:red;
-}
-
-.underlined{
-    text-decoration: underline;
-    text-underline-offset: 2mm;
-    text-decoration-color: red;
-}
-
-/*text*/
-
-h1 {
-    font-size: 5em;
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 2;
-}
-
-/*Navbar*/
 #navbar{
     width:100%;
     background-color: var(--navbar-color); /*inherit*/;
@@ -229,13 +192,12 @@ hr {
 
 /*Responsive styles*/
 @media screen and (max-width: 1200px) {
-#aboutMe{
-    grid-template-columns: auto;
-}
+    #aboutMe{
+        grid-template-columns: auto;
+    }
 
-#myInterestsDiv{
-    grid-column: 1 / span 1;
-    padding:50px;
-}
-
+    #myInterestsDiv{
+        grid-column: 1 / span 1;
+        padding:50px;
+    }
 }

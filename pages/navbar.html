@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css"  rel="stylesheet" href="/styles/variables.css">
+    <link type="text/css"  rel="stylesheet" href="/styles/commonStyles.css">
+    <link type="text/css"  rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/curtainMenu.js"></script>
+</head>
+<body>
+
+<!--- <a href="https://www.flaticon.com/free-icons/comic" title="comic icons">Comic icons created by Freepik - Flaticon</a>
+--->
+
+<div id="navbar">
+    <div></div>
+    <div id="currentPageDiv"><span class="underlined">Home</span></div>
+    <div id="menuDiv"><img id="menuIcon" onClick="showMenu()" src="/icons/menuIcon.png"></div>
+</div>
+
+<div id="curtainMenu" class="noShow">
+
+    <div id="menuLinks">
+        <ul>
+            <li><a href="/CappelloNicola.github.io/index.html">Home</a></li>
+            <li><a href="/CappelloNicola.github.io/pages/workInProgress.html">Projects</a></li>
+            <li>
+                <span>Interests</span>
+                <ul id="dropdown">
+                    <li><a href="/CappelloNicola.github.io/pages/workInProgress.html">Games</a></li>
+                    <li><a href="/CappelloNicola.github.io/pages/workInProgress.html">Music</a></li>
+                    <li><a href="/CappelloNicola.github.io/pages/workInProgress.html">Manga</a></li>
+                    <li><a href="/CappelloNicola.github.io/pages/workInProgress.html">Movie</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/CappelloNicola.github.io/pages/workInProgress.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="closeIconDiv">
+        <img id="closeIcon" onClick="closeMenu()" src="/icons/closeIcon.png">
+    </div>
+
+</div>
+
+</body>
+</html>
