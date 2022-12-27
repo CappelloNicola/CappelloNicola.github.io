@@ -2,18 +2,25 @@
 
 /*Intro div*/
 #intro{
-    background-color: /*var(--navbar-color);*/ inherit;
+    background-color: var(--navbar-color);
     margin-top: var(--marginTop);
     padding: var(--padding);
+    display:grid;
+    grid-template-columns: auto auto;
 }
 
 #nameAndProfession{
-    display:inline-block;
+    grid-column: 1 / span 1;
     border-bottom: 1px solid #e0f0ea;
+}
+
+.emptyDiv{
+    grid-column: 2 / span 1;
 }
 
 #shortDescription{
     margin-top:100px;
+    grid-column: 1 / span 2;
 }
 
 /*About me div*/

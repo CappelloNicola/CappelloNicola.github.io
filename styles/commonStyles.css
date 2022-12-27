@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: var(--page-background);
     color: white;
@@ -40,3 +39,8 @@ p {
     text-decoration-color: red;
 }
 
+@media screen and (max-width: 408px) {
+    body{
+        font-size:10px;
+    }
+}
