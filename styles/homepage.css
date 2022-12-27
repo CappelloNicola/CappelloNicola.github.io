@@ -18,7 +18,7 @@
 
 /*About me div*/
 #aboutMe{
-    background-color: var(--navbar-color);
+    background-color: var(--div2-color);
     padding: var(--padding);
     margin-top: var(--marginTop);
     display: grid;
@@ -87,6 +87,11 @@
 .skillsSet{
     /*overflow:hidden;*/
     text-align:center;
+}
+
+/*footer*/
+#loadFooter{
+    width:100%;
 }
 
 /*Responsive styles*/

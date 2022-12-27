@@ -1,7 +1,11 @@
 :root {
     --page-background: #3c2a4d;
     --navbar-color: #503a65;
+    --footer-color: #503a65;
+    --div2-color: #574f7d;
     --hover-links-color: #95adbe;
     --marginTop: 100px;
     --padding: 50px;
 }
+
+/*divs have alternate color: page-background and div2-color*/
