@@ -30,9 +30,9 @@ h1 {
     font-size: 3rem;
 }
 
-p, a, span{
-    font-size: 1.5rem;
-    line-height: 2;
+p{
+    font-size: var(--text-size);
+    line-height: var(--line-height);
 }
 
 .keyword{
@@ -45,12 +45,12 @@ p, a, span{
     text-decoration-color: red;
 }
 
-@media screen and (max-width: 408px) {
-    body{
-        font-size:10px;
-    }
+/*other classes*/
 
-    html{
-        font-size:10px;
-    }
+.show{
+    display:block;
+}
+
+.noShow{
+    display:none;
 }

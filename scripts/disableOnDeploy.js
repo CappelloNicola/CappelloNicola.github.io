@@ -28,5 +28,9 @@ $(document).ready(function(){
         }
     }
 
+    var allStyles = $('link');
+    console.log(allStyles);
+
+
 });
 */

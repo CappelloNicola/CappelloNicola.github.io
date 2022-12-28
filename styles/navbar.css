@@ -9,6 +9,7 @@
     padding: 25px 0px;
 }
 
+
 #navbar > div{
     width:33.33%;
 }
@@ -37,39 +38,26 @@ hr {
 }
 
 #navbar > a {
-    float: left;
     text-align: center;
     padding: 14px 16px;
 
 }
 
-@media (hover: hover) {
-    /* when hover is supported */
-    #menuIcon:hover, #closeIcon:hover{
-        cursor:pointer;
-    }
-}
-
 #curtainMenu{
     z-index:2;
     height:100%;
-    width:50%;
     position:fixed;
+    width:200px;
     top:0;
     left:0;
-    background: rgba(0, 0, 0, 0.9)
+    background: rgba(0, 0, 0);
+    overflow:auto;
 }
 
-.show{
-    display:flex;
-}
-
-.noShow{
-    display:none;
-}
-
-#curtainMenu > div{
-    width:50%;
+#curtainMenu div{
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    padding: 20px;
 }
 
 #closeIconDiv{
@@ -78,22 +66,17 @@ hr {
     padding-top:20px;
 }
 
-
-#curtainMenu ul{
-     list-style-type: circle;
-}
-
-#curtainMenu li{
-     margin-top:20px;
-}
-
 #curtainMenu a{
     text-decoration:none;
-    color: white;
-    display:block;
+    color:white;
 }
 
 #closeIcon{
     width:30px;
     height:auto;
 }
+
+#curtainInterests > div{
+    border: none;
+}
+

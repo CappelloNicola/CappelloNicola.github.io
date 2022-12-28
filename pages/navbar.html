@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css"  rel="stylesheet" href="/styles/variables.css">
-    <link type="text/css"  rel="stylesheet" href="/styles/commonStyles.css">
-    <link type="text/css"  rel="stylesheet" href="/styles/navbar.css">
-    <script src="/scripts/jquery.js"></script>
-    <script src="/scripts/disableOnDeploy.js"></script>
-    <script src="/scripts/curtainMenu.js"></script>
+    <script src="scripts/disableOnDeploy.js"></script>
 </head>
 <body>
 
@@ -22,29 +17,21 @@
 
 <div id="curtainMenu" class="noShow">
 
-    <div id="menuLinks">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/workInProgress.html">Projects</a></li>
-            <li>
-                <span>Interests:</span>
-                <ul id="dropdown">
-                    <li><a href="/pages/workInProgress.html">Games</a></li>
-                    <li><a href="/pages/workInProgress.html">Music</a></li>
-                    <li><a href="/pages/workInProgress.html">Manga</a></li>
-                    <li><a href="/pages/workInProgress.html">Movie</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="/pages/workInProgress.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-
     <div id="closeIconDiv">
         <img id="closeIcon" onClick="closeMenu()" src="/icons/closeIcon.png">
     </div>
 
+    <div><a href="/index.html">Home</a></div>
+    <div><a href="/pages/workInProgress.html">Projects</a></div>
+    <div><span id="interestsText">Interests:</span></div>
+    <div id="curtainInterests">
+        <div><a href="/pages/workInProgress.html">Games</a></div>
+        <div><a href="/pages/workInProgress.html">Music</a></div>
+        <div><a href="/pages/workInProgress.html">Manga</a></div>
+        <div><a href="/pages/workInProgress.html">Movie</a></div>
+    </div>
+
+    <div><a href="/pages/workInProgress.html">Contact</a></div>
 </div>
 
 </body>

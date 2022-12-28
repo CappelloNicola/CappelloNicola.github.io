@@ -1,0 +1,31 @@
+@media (hover: hover) {
+    /* when hover is supported */
+    #menuIcon:hover, #closeIcon:hover{
+        cursor:pointer;
+    }
+}
+
+
+@media screen and (max-width: 408px) {
+    html{
+        font-size:10px;
+    }
+
+    #closeIcon{
+        width:20px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #aboutMe{
+        grid-template-columns: auto;
+        gap:70px;
+    }
+
+    #myInterestsDiv{
+        grid-column: 1 / span 1;
+        padding:50px;
+    }
+}
+
