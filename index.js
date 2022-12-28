@@ -1,0 +1,152 @@
+
+const express = require('express'); 
+const app = express();              
+const port = 5000;                  
+
+//--------------------root
+app.get('/', (req, res) => {        
+    res.sendFile('index.html', {root: __dirname});
+});
+
+//--------------------files
+app.get('/files/Curriculum.pdf', (req,res) => {
+    res.sendFile('/files/Curriculum.pdf', {root: __dirname});
+});
+
+//pages
+app.get('/pages/navbar.html', (req,res) => {
+    res.sendFile('/pages/navbar.html', {root: __dirname});
+});
+
+app.get('/pages/footer.html', (req,res) => {
+    res.sendFile('/pages/footer.html', {root: __dirname});
+});
+
+app.get('/pages/projects.html', (req,res) => {
+    res.sendFile('/pages/workInProgress.html', {root: __dirname});
+});
+
+//--------------------scripts
+app.get('/scripts/loadNavbar.js', (req,res) => {
+    res.sendFile('/scripts/loadNavbar.js', {root: __dirname});
+});
+
+app.get('/scripts/curtainMenu.js', (req,res) => {
+    res.sendFile('/scripts/curtainMenu.js', {root: __dirname});
+});
+
+app.get('/scripts/loadFooter.js', (req,res) => {
+    res.sendFile('/scripts/loadFooter.js', {root: __dirname});
+});
+
+app.get('/scripts/jquery.js', (req,res) => {
+    res.sendFile('/scripts/jquery.js', {root: __dirname});
+});
+
+//--------------------styles
+app.get('/styles/homepage.css', (req,res) => {
+    res.sendFile('/styles/homepage.css', {root: __dirname});
+});
+
+app.get('/styles/workInProgress.css', (req,res) => {
+    res.sendFile('/styles/workInProgress.css', {root: __dirname});
+});
+
+app.get('/styles/navbar.css', (req,res) => {
+    res.sendFile('/styles/navbar.css', {root: __dirname});
+});
+
+app.get('/styles/variables.css', (req,res) => {
+    res.sendFile('/styles/variables.css', {root: __dirname});
+});
+
+app.get('/styles/commonStyles.css', (req,res) => {
+    res.sendFile('/styles/commonStyles.css', {root: __dirname});
+});
+
+app.get('/styles/responsive.css', (req,res) => {
+    res.sendFile('/styles/responsive.css', {root: __dirname});
+});
+
+app.get('/styles/footer.css', (req,res) => {
+    res.sendFile('/styles/footer.css', {root: __dirname});
+});
+
+//--------------------images
+app.get('/images/myPhoto.png', (req,res) => {
+    res.sendFile('/images/myPhoto.png', {root: __dirname});
+});
+
+app.get('/images/FutabaWorkInProgress.png', (req,res) => {
+    res.sendFile('/images/FutabaWorkInProgress.png', {root: __dirname});
+});
+
+//--------------------icons
+app.get('/icons/comic.png', (req,res) => {
+    res.sendFile('/icons/comic.png', {root: __dirname});
+});
+
+app.get('/icons/videogames.png', (req,res) => {
+    res.sendFile('/icons/videogames.png', {root: __dirname});
+});
+
+app.get('/icons/film.png', (req,res) => {
+    res.sendFile('/icons/film.png', {root: __dirname});
+});
+
+app.get('/icons/headphones.png', (req,res) => {
+    res.sendFile('/icons/headphones.png', {root: __dirname});
+});
+
+app.get('/icons/html.png', (req,res) => {
+    res.sendFile('/icons/html.png', {root: __dirname});
+});
+
+app.get('/icons/css-3.png', (req,res) => {
+    res.sendFile('/icons/css-3.png', {root: __dirname});
+});
+
+app.get('/icons/java-script.png', (req,res) => {
+    res.sendFile('/icons/java-script.png', {root: __dirname});
+});
+
+app.get('/icons/c.png', (req,res) => {
+    res.sendFile('/icons/c.png', {root: __dirname});
+});
+
+app.get('/icons/java.png', (req,res) => {
+    res.sendFile('/icons/java.png', {root: __dirname});
+});
+
+app.get('/icons/node-js.png', (req,res) => {
+    res.sendFile('/icons/node-js.png', {root: __dirname});
+});
+
+app.get('/icons/mysql-logo.png', (req,res) => {
+    res.sendFile('/icons/mysql-logo.png', {root: __dirname});
+});
+
+app.get('/icons/mongo.png', (req,res) => {
+    res.sendFile('/icons/mongo.png', {root: __dirname});
+});
+
+app.get('/icons/github.png', (req,res) => {
+    res.sendFile('/icons/github.png', {root: __dirname});
+});
+
+app.get('/icons/telegram.png', (req,res) => {
+    res.sendFile('/icons/telegram.png', {root: __dirname});
+});
+
+app.get('/icons/menuIcon.png', (req,res) => {
+    res.sendFile('/icons/menuIcon.png', {root: __dirname});
+});
+
+app.get('/icons/closeIcon.png', (req,res) => {
+    res.sendFile('/icons/closeIcon.png', {root: __dirname});
+});
+
+//server starts listening for any attempts from a client to connect at port: {port}
+app.listen(port, () => {            
+    console.log(`Now listening on port ${port}`); 
+});
