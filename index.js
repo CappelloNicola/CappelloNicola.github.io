@@ -13,7 +13,7 @@ app.get('/files/Curriculum.pdf', (req,res) => {
     res.sendFile('/files/Curriculum.pdf', {root: __dirname});
 });
 
-//pages
+//--------------------pages
 app.get('/pages/navbar.html', (req,res) => {
     res.sendFile('/pages/navbar.html', {root: __dirname});
 });
@@ -23,7 +23,7 @@ app.get('/pages/footer.html', (req,res) => {
 });
 
 app.get('/pages/projects.html', (req,res) => {
-    res.sendFile('/pages/workInProgress.html', {root: __dirname});
+    res.sendFile('/pages/projects.html', {root: __dirname});
 });
 
 //--------------------scripts

@@ -30,35 +30,13 @@
     grid-template-columns: auto auto;
 }
 
-#aboutMeHeader, #myInterestsHeader{
-    text-align:center;
-}
 
 #myInterestsDiv{
     grid-column: 1 / span 2;
     padding:50px;
 }
 
-#InterestIconsDiv{
-    display:flex;
-    margin-top:50px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:var(--icons-gap);
-}
 
-#cvButton {
-    background-color: #95adbe;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
 
 #myPhotoContainer{
     width: 100%;
@@ -71,28 +49,36 @@
 
 /*My skills*/
 #mySkills{
-    background-color: /*var(--navbar-color);*/ inherit;
+    background-color: var(--page-background);;
     padding: var(--padding);
     margin-top: var(--marginTop);
 }
 
-#mySkillsHeader{
-    text-align:center;
-}
-
 .skillDiv{
-    /*float:left;*/
     width:100px;
     text-align:center;
-    display: inline-block;
-}
-
-.skillsSet{
-    /*overflow:hidden;*/
-    text-align:center;
+    /*display: inline-block;*/
 }
 
 /*footer*/
 #loadFooter{
     width:100%;
+}
+
+/*classes*/
+.iconsContainer{
+    display:flex;
+    margin-top:50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:var(--icons-gap);
+}
+
+.technologiesSet{
+    margin-top: 30px;
+}
+
+.leftAligned{
+    text-align:left;
+    padding-left: 20px;
 }

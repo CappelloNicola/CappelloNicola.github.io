@@ -11,8 +11,24 @@
         font-size:10px;
     }
 
+    .icon{
+        height: 20px;
+    }
+
+    .iconsContainer{
+        margin-top: 18px;
+    }
+
+    #menuIcon{
+        width:20px;
+    }
+
     #closeIcon{
         width:20px;
+    }
+
+    .skillDiv{
+        width:50px;
     }
 }
 
