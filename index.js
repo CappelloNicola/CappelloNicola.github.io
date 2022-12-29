@@ -31,6 +31,10 @@ app.get('/scripts/loadNavbar.js', (req,res) => {
     res.sendFile('/scripts/loadNavbar.js', {root: __dirname});
 });
 
+app.get('/scripts/showInterests.js', (req,res) => {
+    res.sendFile('/scripts/showInterests.js', {root: __dirname});
+});
+
 app.get('/scripts/curtainMenu.js', (req,res) => {
     res.sendFile('/scripts/curtainMenu.js', {root: __dirname});
 });
@@ -84,6 +88,14 @@ app.get('/images/FutabaWorkInProgress.png', (req,res) => {
 //--------------------icons
 app.get('/icons/comic.png', (req,res) => {
     res.sendFile('/icons/comic.png', {root: __dirname});
+});
+
+app.get('/icons/down-arrow.png', (req,res) => {
+    res.sendFile('/icons/down-arrow.png', {root: __dirname});
+});
+
+app.get('/icons/up-arrow.png', (req,res) => {
+    res.sendFile('/icons/up-arrow.png', {root: __dirname});
 });
 
 app.get('/icons/videogames.png', (req,res) => {

@@ -80,3 +80,14 @@ hr {
     border: none;
 }
 
+#arrowImage{
+    height: 1em;
+    width:auto;
+}
+
+#InterestsAndArrow{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

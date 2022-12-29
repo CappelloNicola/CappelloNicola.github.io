@@ -1,6 +1,6 @@
 @media (hover: hover) {
     /* when hover is supported */
-    #menuIcon:hover, #closeIcon:hover{
+    #menuIcon:hover, #closeIcon:hover, #interestsText, .pointerOnHover{
         cursor:pointer;
     }
 }
