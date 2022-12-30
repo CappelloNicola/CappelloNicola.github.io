@@ -26,6 +26,27 @@ app.get('/pages/projects.html', (req,res) => {
     res.sendFile('/pages/projects.html', {root: __dirname});
 });
 
+app.get('/pages/contacts.html', (req,res) => {
+    res.sendFile('/pages/contacts.html', {root: __dirname});
+});
+
+
+app.get('/pages/games.html', (req,res) => {
+    res.sendFile('/pages/games.html', {root: __dirname});
+});
+
+app.get('/pages/comics.html', (req,res) => {
+    res.sendFile('/pages/comics.html', {root: __dirname});
+});
+
+app.get('/pages/movies.html', (req,res) => {
+    res.sendFile('/pages/movies.html', {root: __dirname});
+});
+
+app.get('/pages/music.html', (req,res) => {
+    res.sendFile('/pages/music.html', {root: __dirname});
+});
+
 //--------------------scripts
 app.get('/scripts/loadNavbar.js', (req,res) => {
     res.sendFile('/scripts/loadNavbar.js', {root: __dirname});
