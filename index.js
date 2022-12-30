@@ -77,6 +77,10 @@ app.get('/styles/workInProgress.css', (req,res) => {
     res.sendFile('/styles/workInProgress.css', {root: __dirname});
 });
 
+app.get('/styles/projects.css', (req,res) => {
+    res.sendFile('/styles/projects.css', {root: __dirname});
+});
+
 app.get('/styles/navbar.css', (req,res) => {
     res.sendFile('/styles/navbar.css', {root: __dirname});
 });
@@ -104,6 +108,18 @@ app.get('/images/myPhoto.png', (req,res) => {
 
 app.get('/images/FutabaWorkInProgress.png', (req,res) => {
     res.sendFile('/images/FutabaWorkInProgress.png', {root: __dirname});
+});
+
+app.get('/images/videogames.jpg', (req,res) => {
+    res.sendFile('/images/videogames.jpg', {root: __dirname});
+});
+
+app.get('/images/unisaEatIcon.jpg', (req,res) => {
+    res.sendFile('/images/unisaEatIcon.jpg', {root: __dirname});
+});
+
+app.get('/images/maze.jpg', (req,res) => {
+    res.sendFile('/images/maze.jpg', {root: __dirname});
 });
 
 //--------------------icons

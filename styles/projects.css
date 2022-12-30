@@ -1,0 +1,43 @@
+#projectsDiv{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+#projectsDiv > div{
+    width: 25%;
+    background-color: #e0f0ea;
+    border-radius: 5px;
+}
+
+.projectImage{
+    width:100%;
+    height: auto;
+}
+
+.projectsType{
+    margin-left:20px;
+    margin-top: 300px; 
+    text-align: left;
+}
+
+.projectTitle{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.4rem;
+    line-height: normal;
+    color: black;
+}
+
+.projectDescription{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1rem;
+    line-height: normal;
+    color: #737373;
+}

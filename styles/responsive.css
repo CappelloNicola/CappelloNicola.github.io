@@ -29,6 +29,13 @@
 
 }
 
+@media screen and (max-width: 821px) {
+    #projectsDiv > div{
+        width: 100%;
+    }
+
+}
+
 
 @media screen and (max-width: 1200px) {
     #aboutMe{
