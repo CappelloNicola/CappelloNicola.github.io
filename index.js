@@ -127,6 +127,10 @@ app.get('/icons/comic.png', (req,res) => {
     res.sendFile('/icons/comic.png', {root: __dirname});
 });
 
+app.get('/icons/mail.png', (req,res) => {
+    res.sendFile('/icons/mail.png', {root: __dirname});
+});
+
 app.get('/icons/down-arrow.png', (req,res) => {
     res.sendFile('/icons/down-arrow.png', {root: __dirname});
 });
