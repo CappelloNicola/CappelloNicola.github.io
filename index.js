@@ -73,6 +73,11 @@ app.get('/styles/homepage.css', (req,res) => {
     res.sendFile('/styles/homepage.css', {root: __dirname});
 });
 
+app.get('/styles/games.css', (req,res) => {
+    res.sendFile('/styles/games.css', {root: __dirname});
+});
+
+
 app.get('/styles/workInProgress.css', (req,res) => {
     res.sendFile('/styles/workInProgress.css', {root: __dirname});
 });
@@ -122,6 +127,19 @@ app.get('/images/maze.jpg', (req,res) => {
     res.sendFile('/images/maze.jpg', {root: __dirname});
 });
 
+    //--------------------games images
+    app.get('/images/games/p5r.jpg', (req,res) => {
+        res.sendFile('/images/games/p5r.jpg', {root: __dirname});
+    });
+
+    app.get('/images/games/p4g.jpg', (req,res) => {
+        res.sendFile('/images/games/p4g.jpg', {root: __dirname});
+    });
+
+    app.get('/images/games/tlou.jpg', (req,res) => {
+        res.sendFile('/images/games/tlou.jpg', {root: __dirname});
+    });
+    
 //--------------------icons
 app.get('/icons/comic.png', (req,res) => {
     res.sendFile('/icons/comic.png', {root: __dirname});

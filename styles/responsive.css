@@ -29,6 +29,26 @@
 
 }
 
+@media screen and (max-width: 748px) {
+    .imageContainer{
+        float:none;
+        width:100%;
+    }
+    
+    .gameDescriptionContainer{
+        float:none;
+        width:100%;
+        
+    }
+
+    .gameContainer{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
 @media screen and (max-width: 821px) {
     #projectsDiv > div{
         width: 100%;

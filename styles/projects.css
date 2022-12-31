@@ -22,7 +22,7 @@
 
 .projectsType{
     margin-left:20px;
-    margin-top: 300px; 
+    margin-top: var(--padding-from-navbar);
     text-align: left;
 }
 
@@ -30,7 +30,6 @@
     margin-left: 5px;
     margin-right: 5px;
     font-size: 1.4rem;
-    line-height: normal;
     color: black;
 }
 
@@ -38,6 +37,5 @@
     margin-left: 5px;
     margin-right: 5px;
     font-size: 1rem;
-    line-height: normal;
-    color: #737373;
+    color: var(--light-font-color);
 }

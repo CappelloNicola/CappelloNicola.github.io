@@ -1,3 +1,8 @@
+p{
+    line-height: var(--line-height);
+    font-size: var(--text-size);
+}
+
 /*Intro div*/
 #intro{
     background-color: var(--page-background);
