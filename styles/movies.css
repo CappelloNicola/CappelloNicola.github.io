@@ -1,0 +1,48 @@
+#myFavoriteMovies{
+    margin-left:20px;
+    margin-top: var(--padding-from-navbar); 
+    text-align: left;
+}
+
+#rankDiv{
+    margin-top: 40px;
+    margin-bottom: 200px;
+    padding:20px;
+}
+
+.movieContainer{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: #e0f0ea;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.movieImage{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movieImageContainer{
+    width: 15%;
+    float: left;
+}
+
+.movieDescriptionContainer{
+    float: left;
+    width: 80%;
+    padding-left:10px;
+    padding-right: 10px;
+    color: var(--light-font-color);
+}
+
+.movieTitle{
+    color: black;
+    line-height: 0;
+    font-weight: bold;
+}
+
+.rankPosition{
+    font-weight: normal;
+}

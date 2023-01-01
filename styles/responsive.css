@@ -30,18 +30,18 @@
 }
 
 @media screen and (max-width: 677px) {
-    .comicImageContainer{
+    .comicImageContainer, .movieImageContainer{
         float:none;
         width:100%;
     }
     
-    .comicDescriptionContainer{
+    .comicDescriptionContainer, .movieDescriptionContainer{
         float:none;
         width:100%;
         
     }
 
-    .comicContainer{
+    .comicContainer, .movieContainer{
         width: 80%;
         margin-right: auto;
         margin-left: auto;

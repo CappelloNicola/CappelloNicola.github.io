@@ -104,6 +104,10 @@ app.get('/styles/comics.css', (req,res) => {
     res.sendFile('/styles/comics.css', {root: __dirname});
 });
 
+app.get('/styles/movies.css', (req,res) => {
+    res.sendFile('/styles/movies.css', {root: __dirname});
+});
+
 //--------------------images
 app.get('/images/myPhoto.png', (req,res) => {
     res.sendFile('/images/myPhoto.png', {root: __dirname});
@@ -149,6 +153,15 @@ app.get('/images/maze.jpg', (req,res) => {
 
     app.get('/images/comics/chainsawMan.jpg', (req,res) => {
         res.sendFile('/images/comics/chainsawMan.jpg', {root: __dirname});
+    });
+
+    //--------------------movies images
+    app.get('/images/movies/sel.jpg', (req,res) => {
+        res.sendFile('/images/movies/sel.jpg', {root: __dirname});
+    });
+
+    app.get('/images/movies/nge.jpg', (req,res) => {
+        res.sendFile('/images/movies/nge.jpg', {root: __dirname});
     });
     
 //--------------------icons
