@@ -108,6 +108,10 @@ app.get('/styles/movies.css', (req,res) => {
     res.sendFile('/styles/movies.css', {root: __dirname});
 });
 
+app.get('/styles/music.css', (req,res) => {
+    res.sendFile('/styles/music.css', {root: __dirname});
+});
+
 //--------------------images
 app.get('/images/myPhoto.png', (req,res) => {
     res.sendFile('/images/myPhoto.png', {root: __dirname});
@@ -162,6 +166,20 @@ app.get('/images/maze.jpg', (req,res) => {
 
     app.get('/images/movies/nge.jpg', (req,res) => {
         res.sendFile('/images/movies/nge.jpg', {root: __dirname});
+    });
+
+    
+    //--------------------music images
+    app.get('/images/music/okcomputer.jpg', (req,res) => {
+        res.sendFile('/images/music/okcomputer.jpg', {root: __dirname});
+    });
+
+    app.get('/images/music/funhouse.jpg', (req,res) => {
+        res.sendFile('/images/music/funhouse.jpg', {root: __dirname});
+    });
+
+    app.get('/images/music/aeroplaneOverTheSea.jpg', (req,res) => {
+        res.sendFile('/images/music/aeroplaneOverTheSea.jpg', {root: __dirname});
     });
     
 //--------------------icons

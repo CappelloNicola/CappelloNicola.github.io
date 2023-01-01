@@ -29,6 +29,13 @@
 
 }
 
+@media screen and (max-width: 520px) {
+    .albumImageContainer{
+        float:none;
+        width:100%;
+    }
+}
+
 @media screen and (max-width: 677px) {
     .comicImageContainer, .movieImageContainer{
         float:none;

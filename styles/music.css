@@ -1,4 +1,4 @@
-#myFavoriteMovies{
+#myFavoriteAlbums{
     margin-left:20px;
     margin-top: var(--padding-from-navbar); 
     text-align: left;
@@ -10,7 +10,7 @@
     padding:20px;
 }
 
-.movieContainer{
+.albumContainer{
     width: 100%;
     margin-bottom: 50px;
     background-color: #e0f0ea;
@@ -18,29 +18,36 @@
     overflow: hidden;
 }
 
-.movieImage{
+.albumImage{
     width: 100%;
     height: auto;
     display: block;
 }
 
-.movieImageContainer{
+.albumImageContainer{
     width: 15%;
     float: left;
 }
 
-.movieDescriptionContainer{
+.albumDescriptionContainer{
     float: left;
-    width: 85%;
     padding-left:10px;
     padding-right: 10px;
     color: var(--light-font-color);
 }
 
-.movieTitle{
+.albumTitle{
     color: black;
     line-height: 0;
     font-weight: bold;
+}
+
+.rankPositionContainer{
+    float:left;
+    width:30px;
+    color: black;
+    line-height: 0;
+    padding-left: 10px;
 }
 
 .rankPosition{
