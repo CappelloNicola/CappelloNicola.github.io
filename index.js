@@ -26,11 +26,6 @@ app.get('/pages/projects.html', (req,res) => {
     res.sendFile('/pages/projects.html', {root: __dirname});
 });
 
-app.get('/pages/contacts.html', (req,res) => {
-    res.sendFile('/pages/contacts.html', {root: __dirname});
-});
-
-
 app.get('/pages/games.html', (req,res) => {
     res.sendFile('/pages/games.html', {root: __dirname});
 });
@@ -77,7 +72,6 @@ app.get('/styles/games.css', (req,res) => {
     res.sendFile('/styles/games.css', {root: __dirname});
 });
 
-
 app.get('/styles/workInProgress.css', (req,res) => {
     res.sendFile('/styles/workInProgress.css', {root: __dirname});
 });
@@ -104,6 +98,10 @@ app.get('/styles/responsive.css', (req,res) => {
 
 app.get('/styles/footer.css', (req,res) => {
     res.sendFile('/styles/footer.css', {root: __dirname});
+});
+
+app.get('/styles/comics.css', (req,res) => {
+    res.sendFile('/styles/comics.css', {root: __dirname});
 });
 
 //--------------------images
@@ -138,6 +136,19 @@ app.get('/images/maze.jpg', (req,res) => {
 
     app.get('/images/games/tlou.jpg', (req,res) => {
         res.sendFile('/images/games/tlou.jpg', {root: __dirname});
+    });
+
+    //--------------------comics images
+    app.get('/images/comics/berserk.jpg', (req,res) => {
+        res.sendFile('/images/comics/berserk.jpg', {root: __dirname});
+    });
+
+    app.get('/images/comics/blame.jpg', (req,res) => {
+        res.sendFile('/images/comics/blame.jpg', {root: __dirname});
+    });
+
+    app.get('/images/comics/chainsawMan.jpg', (req,res) => {
+        res.sendFile('/images/comics/chainsawMan.jpg', {root: __dirname});
     });
     
 //--------------------icons

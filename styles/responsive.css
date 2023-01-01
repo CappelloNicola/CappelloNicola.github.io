@@ -29,8 +29,28 @@
 
 }
 
+@media screen and (max-width: 677px) {
+    .comicImageContainer{
+        float:none;
+        width:100%;
+    }
+    
+    .comicDescriptionContainer{
+        float:none;
+        width:100%;
+        
+    }
+
+    .comicContainer{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
 @media screen and (max-width: 748px) {
-    .imageContainer{
+    .gameImageContainer{
         float:none;
         width:100%;
     }

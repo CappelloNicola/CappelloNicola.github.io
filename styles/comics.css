@@ -1,4 +1,4 @@
-#myFavoriteGames{
+#myFavoriteComics{
     margin-left:20px;
     margin-top: var(--padding-from-navbar); 
     text-align: left;
@@ -10,7 +10,7 @@
     padding:20px;
 }
 
-.gameContainer{
+.comicContainer{
     width: 100%;
     margin-bottom: 50px;
     background-color: #e0f0ea;
@@ -18,18 +18,18 @@
     overflow: hidden;
 }
 
-.gameImage{
+.comicImage{
     width: 100%;
     height: auto;
     display: block;
 }
 
-.gameImageContainer{
+.comicImageContainer{
     width: 15%;
     float: left;
 }
 
-.gameDescriptionContainer{
+.comicDescriptionContainer{
     float: left;
     width: 80%;
     padding-left:10px;
@@ -37,7 +37,7 @@
     color: var(--light-font-color);
 }
 
-.gameTitle{
+.comicTitle{
     color: black;
     line-height: 0;
     font-weight: bold;
