@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', {root: __dirname});
 });
 
+app.get('/404.html', (req, res) => {        
+    res.sendFile('404.html', {root: __dirname});
+});
+
+
 //--------------------files
 app.get('/files/Curriculum.pdf', (req,res) => {
     res.sendFile('/files/Curriculum.pdf', {root: __dirname});
@@ -131,6 +136,10 @@ app.get('/images/unisaEatIcon.jpg', (req,res) => {
 
 app.get('/images/maze.jpg', (req,res) => {
     res.sendFile('/images/maze.jpg', {root: __dirname});
+});
+
+app.get('/images/futaba404.png', (req,res) => {
+    res.sendFile('/images/futaba404.png', {root: __dirname});
 });
 
     //--------------------games images
